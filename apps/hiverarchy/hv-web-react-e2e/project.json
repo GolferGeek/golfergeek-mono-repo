@@ -1,0 +1,33 @@
+{
+  "name": "hv-web-react-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/hiverarchy/hv-web-react-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/hiverarchy/hv-web-react-e2e/cypress.config.ts",
+        "devServerTarget": "hv-web-react:serve:development",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "hv-web-react:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "hv-web-react:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/hiverarchy/hv-web-react-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["hv-web-react"]
+}
