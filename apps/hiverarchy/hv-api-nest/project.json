@@ -1,7 +1,7 @@
 {
   "name": "hv-api-nest",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/hv-api-nest/src",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/hiverarchy/hv-api-nest/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -11,12 +11,12 @@
       "options": {
         "target": "node",
         "compiler": "tsc",
-        "outputPath": "dist/apps/hv-api-nest",
-        "main": "apps/hv-api-nest/src/main.ts",
-        "tsConfig": "apps/hv-api-nest/tsconfig.app.json",
-        "assets": ["apps/hv-api-nest/src/assets"],
+        "outputPath": "dist/apps/hiverarchy/hv-api-nest",
+        "main": "apps/hiverarchy/hv-api-nest/src/main.ts",
+        "tsConfig": "apps/hiverarchy/hv-api-nest/tsconfig.app.json",
+        "assets": ["apps/hiverarchy/hv-api-nest/src/assets"],
         "isolatedConfig": true,
-        "webpackConfig": "apps/hv-api-nest/webpack.config.js"
+        "webpackConfig": "apps/hiverarchy/hv-api-nest/webpack.config.js"
       },
       "configurations": {
         "development": {},
@@ -42,14 +42,14 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/hv-api-nest/**/*.ts"]
+        "lintFilePatterns": ["apps/hiverarchy/hv-api-nest/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/hv-api-nest/jest.config.ts",
+        "jestConfig": "apps/hiverarchy/hv-api-nest/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
