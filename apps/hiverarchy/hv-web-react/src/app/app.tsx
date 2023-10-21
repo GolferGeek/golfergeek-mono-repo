@@ -1,21 +1,45 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
 
-import NxWelcome from './nx-welcome';
-
+import { User, useAuth0 } from '@auth0/auth0-react';
 import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
+
+  const { isAuthenticated, isLoading, error, user, loginWithRedirect, logout } = useAuth0();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Oops... {error.message}</div>;
+  }
+
+  if (isAuthenticated) {
+    return (
+      <div>
+        Hey {(user as User).name}! You are logged in!{' '}
+        <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+          Log out
+        </button>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div>
+        Hey stranger! You should{' '}
+        <button onClick={() => loginWithRedirect()}>Log in</button>
+      </div>
+    );
+  }
+
   return (
     <div>
-      <NxWelcome title="react developer!" />
 
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
+      Hey React Developer... Welcome to Hiverarchy!
       <div role="navigation">
         <ul>
           <li>
