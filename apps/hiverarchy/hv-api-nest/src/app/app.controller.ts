@@ -10,4 +10,14 @@ export class AppController {
   getData() {
     return this.appService.getData();
   }
+
+  @Get('/public')
+  getPublic(): string {
+    return this.appService.getPublic();
+  }
+
+  @Get('/protected')
+  getProtected(): string {
+    return this.appService.getPrivate();
+  }
 }
