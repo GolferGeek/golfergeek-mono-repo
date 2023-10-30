@@ -1,0 +1,14 @@
+[1m[33m[36m>[39m[33m [7m[1m[36m NX [39m[33m[22m[1m[27m Unable to load tsconfig-paths, workspace libraries may be inaccessible.[39m[22m
+[1m[33m  - To fix this, install tsconfig-paths with npm/yarn/pnpm[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 2.68 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5b258895b1bc7056)
+[1m[31mDebugger listening on ws://localhost:9229/c38eebf2-3108-4700-907a-8de05b256134[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/c38eebf2-3108-4700-907a-8de05b256134[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 2.69 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (17cdb359be38b75b)
+[1m[31mDebugger listening on ws://localhost:9229/2d1ac76f-1e2d-4401-8e7b-218fd913d6e4[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/2d1ac76f-1e2d-4401-8e7b-218fd913d6e4[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m

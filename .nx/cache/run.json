@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "nx run-many --target=serve --projects=hv-api-nest,hv-web-react --parallel --maxParallel=2",
+    "startTime": "2023-10-25T17:21:44.692Z",
+    "endTime": "2023-10-27T15:36:10.525Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "hv-api-nest:serve:development",
+      "target": "serve",
+      "projectName": "hv-api-nest",
+      "hash": "15818024867531314579",
+      "startTime": "2023-10-25T17:21:44.695Z",
+      "endTime": "2023-10-27T15:36:10.524Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "hv-web-react:serve:development",
+      "target": "serve",
+      "projectName": "hv-web-react",
+      "hash": "7383731271016865410",
+      "startTime": "2023-10-25T17:21:44.696Z",
+      "endTime": "2023-10-27T15:36:10.525Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+[1m[33m[36m>[39m[33m [7m[1m[36m NX [39m[33m[22m[1m[27m Unable to load tsconfig-paths, workspace libraries may be inaccessible.[39m[22m
+[1m[33m  - To fix this, install tsconfig-paths with npm/yarn/pnpm[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.21 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f01c91753da8f432)
+[1m[31mDebugger listening on ws://localhost:9229/2632a8fe-b989-48f1-9fc2-7b94ebf57865[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/2632a8fe-b989-48f1-9fc2-7b94ebf57865[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 31336  - [39m[31m10/23/2023, 12:24:57 PM [31m  ERROR[39m[31m [38;5;3m[ExceptionHandler] [39m[31m[31mNest can't resolve dependencies of the AuthorizationGuard (?). Please make sure that the argument ConfigService at index [0] is available in the AuthorizationModule context.[39m[22m
+[1m[31m[39m[22m
+[1m[31mPotential solutions:[39m[22m
+[1m[31m- Is AuthorizationModule a valid NestJS module?[39m[22m
+[1m[31m- If ConfigService is a provider, is it part of the current AuthorizationModule?[39m[22m
+[1m[31m- If ConfigService is exported from a separate @Module, is that module imported within AuthorizationModule?[39m[22m
+[1m[31m  @Module({[39m[22m
+[1m[31m    imports: [ /* the Module containing ConfigService */ ][39m[22m
+[1m[31m  })[39m[22m
+[1m[31m[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: Nest can't resolve dependencies of the AuthorizationGuard (?). Please make sure that the argument ConfigService at index [0] is available in the AuthorizationModule context.[39m[22m
+[1m[31m[39m[22m
+[1m[31mPotential solutions:[39m[22m
+[1m[31m- Is AuthorizationModule a valid NestJS module?[39m[22m
+[1m[31m- If ConfigService is a provider, is it part of the current AuthorizationModule?[39m[22m
+[1m[31m- If ConfigService is exported from a separate @Module, is that module imported within AuthorizationModule?[39m[22m
+[1m[31m  @Module({[39m[22m
+[1m[31m    imports: [ /* the Module containing ConfigService */ ][39m[22m
+[1m[31m  })[39m[22m
+[1m[31m[39m[22m
+[1m[31m    at Injector.lookupComponentInParentModules (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/injector/injector.js:254:19)[39m[22m
+[1m[31m    at Injector.resolveComponentInstance (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/injector/injector.js:207:33)[39m[22m
+[1m[31m    at resolveParam (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/injector/injector.js:128:38)[39m[22m
+[1m[31m    at async Promise.all (index 0)[39m[22m
+[1m[31m    at Injector.resolveConstructorParams (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/injector/injector.js:143:27)[39m[22m
+[1m[31m    at Injector.loadInstance (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/injector/injector.js:70:13)[39m[22m
+[1m[31m    at Injector.loadProvider (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/injector/injector.js:97:9)[39m[22m
+[1m[31m    at /Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/injector/instance-loader.js:56:13[39m[22m
+[1m[31m    at async Promise.all (index 3)[39m[22m
+[1m[31m    at InstanceLoader.createInstancesOfProviders (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/injector/instance-loader.js:55:9)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.27 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (365293ae2baf2fee)
+[1m[31mDebugger listening on ws://localhost:9229/7358f364-8263-4798-a98e-aeb519aa8082[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/7358f364-8263-4798-a98e-aeb519aa8082[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 31441  - [39m[31m10/23/2023, 12:28:56 PM [31m  ERROR[39m[31m [38;5;3m[NestApplication] [39m[31m[31mError: listen EADDRINUSE: address already in use :::3000[39m[31m[38;5;3m +1ms[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: listen EADDRINUSE: address already in use :::3000[39m[22m
+[1m[31m    at Server.setupListenHandle [as _listen2] (node:net:1872:16)[39m[22m
+[1m[31m    at listenInCluster (node:net:1920:12)[39m[22m
+[1m[31m    at Server.listen (node:net:2008:7)[39m[22m
+[1m[31m    at ExpressAdapter.listen (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/platform-express/adapters/express-adapter.js:89:32)[39m[22m
+[1m[31m    at /Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:180:30[39m[22m
+[1m[31m    at new Promise (<anonymous>)[39m[22m
+[1m[31m    at NestApplication.listen (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:170:16)[39m[22m
+[1m[31m    at bootstrap (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/dist/apps/hiverarchy/hv-api-nest/webpack:/src/main.ts:16:3)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+

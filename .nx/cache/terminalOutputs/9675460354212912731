@@ -1,0 +1,23 @@
+[1m[33m[36m>[39m[33m [7m[1m[36m NX [39m[33m[22m[1m[27m Unable to load tsconfig-paths, workspace libraries may be inaccessible.[39m[22m
+[1m[33m  - To fix this, install tsconfig-paths with npm/yarn/pnpm[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.27 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2130b5a28d67b66d)
+[1m[31mDebugger listening on ws://localhost:9229/feb33742-8d0b-4917-87bf-3a7bbadd8c3d[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/feb33742-8d0b-4917-87bf-3a7bbadd8c3d[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 31835  - [39m[31m10/23/2023, 12:34:40 PM [31m  ERROR[39m[31m [38;5;3m[NestApplication] [39m[31m[31mError: listen EADDRINUSE: address already in use :::5000[39m[31m[38;5;3m +1ms[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: listen EADDRINUSE: address already in use :::5000[39m[22m
+[1m[31m    at Server.setupListenHandle [as _listen2] (node:net:1872:16)[39m[22m
+[1m[31m    at listenInCluster (node:net:1920:12)[39m[22m
+[1m[31m    at Server.listen (node:net:2008:7)[39m[22m
+[1m[31m    at ExpressAdapter.listen (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/platform-express/adapters/express-adapter.js:89:32)[39m[22m
+[1m[31m    at /Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:180:30[39m[22m
+[1m[31m    at new Promise (<anonymous>)[39m[22m
+[1m[31m    at NestApplication.listen (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:170:16)[39m[22m
+[1m[31m    at bootstrap (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/dist/apps/hiverarchy/hv-api-nest/webpack:/src/main.ts:16:3)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
