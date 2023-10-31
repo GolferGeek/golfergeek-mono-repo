@@ -1,0 +1,136 @@
+[1m[33m[36m>[39m[33m [7m[1m[36m NX [39m[33m[22m[1m[27m Unable to load tsconfig-paths, workspace libraries may be inaccessible.[39m[22m
+[1m[33m  - To fix this, install tsconfig-paths with npm/yarn/pnpm[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5832ef24cd096154)
+[1m[31mDebugger listening on ws://localhost:9229/7d2ab024-3798-4ac3-9872-351d86d633a1[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/7d2ab024-3798-4ac3-9872-351d86d633a1[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[[39m[22m
+[1m[31m  GraphQLError: Query root type must be provided.[39m[22m
+[1m[31m      at SchemaValidationContext.reportError (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/type/validate.js:73:7)[39m[22m
+[1m[31m      at validateRootTypes (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/type/validate.js:89:13)[39m[22m
+[1m[31m      at validateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/type/validate.js:41:3)[39m[22m
+[1m[31m      at graphqlImpl (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/graphql.js:60:63)[39m[22m
+[1m[31m      at /Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/graphql.js:23:43[39m[22m
+[1m[31m      at new Promise (<anonymous>)[39m[22m
+[1m[31m      at graphql (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/graphql.js:23:10)[39m[22m
+[1m[31m      at GraphQLSchemaFactory.create (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/schema-builder/graphql-schema.factory.js:50:65)[39m[22m
+[1m[31m      at GraphQLSchemaBuilder.generateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:35:52)[39m[22m
+[1m[31m      at GraphQLSchemaBuilder.build (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:22:31) {[39m[22m
+[1m[31m    path: undefined,[39m[22m
+[1m[31m    locations: undefined,[39m[22m
+[1m[31m    extensions: [Object: null prototype] {}[39m[22m
+[1m[31m  }[39m[22m
+[1m[31m][39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/schema-builder/graphql-schema.factory.js:56[39m[22m
+[1m[31m                throw new schema_generation_error_1.SchemaGenerationError(errors);[39m[22m
+[1m[31m                      ^[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: Schema generation error (code-first approach)[39m[22m
+[1m[31m    at GraphQLSchemaFactory.create (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/schema-builder/graphql-schema.factory.js:56:23)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m[22m
+[1m[31m    at GraphQLSchemaBuilder.generateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:35:24)[39m[22m
+[1m[31m    at GraphQLSchemaBuilder.build (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:22:20)[39m[22m
+[1m[31m    at GraphQLFactory.generateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql.factory.js:27:41)[39m[22m
+[1m[31m    at GraphQLModule.onModuleInit (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql.module.js:109:27)[39m[22m
+[1m[31m    at callModuleInitHook (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/hooks/on-module-init.hook.js:51:9)[39m[22m
+[1m[31m    at NestApplication.callInitHook (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application-context.js:223:13)[39m[22m
+[1m[31m    at NestApplication.init (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:100:9)[39m[22m
+[1m[31m    at NestApplication.listen (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:169:33)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.7 KiB [1m[33m[entry][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5832ef24cd096154)
+[1m[31mDebugger listening on ws://localhost:9229/30b5c315-7261-42ab-afd9-1b45dfe39ea4[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/30b5c315-7261-42ab-afd9-1b45dfe39ea4[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[[39m[22m
+[1m[31m  GraphQLError: Query root type must be provided.[39m[22m
+[1m[31m      at SchemaValidationContext.reportError (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/type/validate.js:73:7)[39m[22m
+[1m[31m      at validateRootTypes (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/type/validate.js:89:13)[39m[22m
+[1m[31m      at validateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/type/validate.js:41:3)[39m[22m
+[1m[31m      at graphqlImpl (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/graphql.js:60:63)[39m[22m
+[1m[31m      at /Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/graphql.js:23:43[39m[22m
+[1m[31m      at new Promise (<anonymous>)[39m[22m
+[1m[31m      at graphql (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/graphql.js:23:10)[39m[22m
+[1m[31m      at GraphQLSchemaFactory.create (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/schema-builder/graphql-schema.factory.js:50:65)[39m[22m
+[1m[31m      at GraphQLSchemaBuilder.generateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:35:52)[39m[22m
+[1m[31m      at GraphQLSchemaBuilder.build (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:22:31) {[39m[22m
+[1m[31m    path: undefined,[39m[22m
+[1m[31m    locations: undefined,[39m[22m
+[1m[31m    extensions: [Object: null prototype] {}[39m[22m
+[1m[31m  }[39m[22m
+[1m[31m][39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/schema-builder/graphql-schema.factory.js:56[39m[22m
+[1m[31m                throw new schema_generation_error_1.SchemaGenerationError(errors);[39m[22m
+[1m[31m                      ^[39m[22m
+[1m[31mError: Schema generation error (code-first approach)[39m[22m
+[1m[31m    at GraphQLSchemaFactory.create (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/schema-builder/graphql-schema.factory.js:56:23)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m[22m
+[1m[31m    at GraphQLSchemaBuilder.generateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:35:24)[39m[22m
+[1m[31m    at GraphQLSchemaBuilder.build (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:22:20)[39m[22m
+[1m[31m    at GraphQLFactory.generateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql.factory.js:27:41)[39m[22m
+[1m[31m    at GraphQLModule.onModuleInit (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql.module.js:109:27)[39m[22m
+[1m[31m    at callModuleInitHook (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/hooks/on-module-init.hook.js:51:9)[39m[22m
+[1m[31m    at NestApplication.callInitHook (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application-context.js:223:13)[39m[22m
+[1m[31m    at NestApplication.init (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:100:9)[39m[22m
+[1m[31m    at NestApplication.listen (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:169:33)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.7 KiB [1m[33m[entry][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5832ef24cd096154)
+[1m[31mDebugger listening on ws://localhost:9229/200a3e1c-6053-4c97-8a9f-173a47747128[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/200a3e1c-6053-4c97-8a9f-173a47747128[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[[39m[22m
+[1m[31m  GraphQLError: Query root type must be provided.[39m[22m
+[1m[31m      at SchemaValidationContext.reportError (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/type/validate.js:73:7)[39m[22m
+[1m[31m      at validateRootTypes (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/type/validate.js:89:13)[39m[22m
+[1m[31m      at validateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/type/validate.js:41:3)[39m[22m
+[1m[31m      at graphqlImpl (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/graphql.js:60:63)[39m[22m
+[1m[31m      at /Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/graphql.js:23:43[39m[22m
+[1m[31m      at new Promise (<anonymous>)[39m[22m
+[1m[31m      at graphql (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/graphql/graphql.js:23:10)[39m[22m
+[1m[31m      at GraphQLSchemaFactory.create (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/schema-builder/graphql-schema.factory.js:50:65)[39m[22m
+[1m[31m      at GraphQLSchemaBuilder.generateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:35:52)[39m[22m
+[1m[31m      at GraphQLSchemaBuilder.build (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:22:31) {[39m[22m
+[1m[31m    path: undefined,[39m[22m
+[1m[31m    locations: undefined,[39m[22m
+[1m[31m    extensions: [Object: null prototype] {}[39m[22m
+[1m[31m  }[39m[22m
+[1m[31m][39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/schema-builder/graphql-schema.factory.js:56[39m[22m
+[1m[31m                throw new schema_generation_error_1.SchemaGenerationError(errors);[39m[22m
+[1m[31m                      ^[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: Schema generation error (code-first approach)[39m[22m
+[1m[31m    at GraphQLSchemaFactory.create (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/schema-builder/graphql-schema.factory.js:56:23)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m[22m
+[1m[31m    at GraphQLSchemaBuilder.generateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:35:24)[39m[22m
+[1m[31m    at GraphQLSchemaBuilder.build (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql-schema.builder.js:22:20)[39m[22m
+[1m[31m    at GraphQLFactory.generateSchema (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql.factory.js:27:41)[39m[22m
+[1m[31m    at GraphQLModule.onModuleInit (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/graphql/dist/graphql.module.js:109:27)[39m[22m
+[1m[31m    at callModuleInitHook (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/hooks/on-module-init.hook.js:51:9)[39m[22m
+[1m[31m    at NestApplication.callInitHook (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application-context.js:223:13)[39m[22m
+[1m[31m    at NestApplication.init (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:100:9)[39m[22m
+[1m[31m    at NestApplication.listen (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/core/nest-application.js:169:33)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+

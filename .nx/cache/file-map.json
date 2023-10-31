@@ -9,14 +9,17 @@
     "@nestjs/config": "^3.1.1",
     "@nestjs/core": "^10.0.2",
     "@nestjs/graphql": "^12.0.9",
+    "@nestjs/mongoose": "^10.0.1",
     "@nestjs/platform-express": "^10.0.2",
     "@swc/helpers": "~0.5.2",
+    "@types/graphql": "^14.5.0",
     "auth0": "^4.0.1",
     "axios": "^1.0.0",
     "express-jwt": "^8.4.1",
     "express-oauth2-jwt-bearer": "^1.6.0",
     "graphql": "^16.8.1",
     "graphql-tools": "^9.0.0",
+    "joi": "^17.11.0",
     "jwks-rsa": "^3.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -59,6 +62,7 @@
     "babel-jest": "^29.4.1",
     "cypress": "^13.0.0",
     "detox": "^20.11.1",
+    "dotenv": "^16.3.1",
     "eslint": "~8.46.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.13.4",
@@ -108,35 +112,39 @@
       },
       {
         "file": ".nx/cache/d/daemon.log",
-        "hash": "328048721767703469"
+        "hash": "12660795447985318691"
       },
       {
         "file": ".nx/cache/d/server-process.json",
-        "hash": "12491511119249681241"
+        "hash": "17410000257309133577"
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "14862268346974312389"
+        "hash": "13112721105686752725"
       },
       {
         "file": ".nx/cache/lockfile.hash",
-        "hash": "3716443669777634703"
+        "hash": "8793249052706233807"
       },
       {
         "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "5857677847679702999"
+        "hash": "7047022179844439555"
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "16828942828745462812"
+        "hash": "9145141692467780572"
       },
       {
         "file": ".nx/cache/run.json",
-        "hash": "5730538340792800354"
+        "hash": "8416607623454967645"
       },
       {
         "file": ".nx/cache/terminalOutputs/1088671834920890753",
         "hash": "12762460714439687873"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/11064834237519854998",
+        "hash": "3244421341483603138"
       },
       {
         "file": ".nx/cache/terminalOutputs/11358623613272231368",
@@ -151,12 +159,20 @@
         "hash": "2331981421091626751"
       },
       {
+        "file": ".nx/cache/terminalOutputs/15457654761399693541",
+        "hash": "17988100928857612117"
+      },
+      {
         "file": ".nx/cache/terminalOutputs/15575449264962799071",
         "hash": "16413028205099375874"
       },
       {
         "file": ".nx/cache/terminalOutputs/15818024867531314579",
         "hash": "421290239355491972"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/16808750314267501066",
+        "hash": "4265856695851386139"
       },
       {
         "file": ".nx/cache/terminalOutputs/18251371550564263760",
@@ -167,8 +183,24 @@
         "hash": "3970329567583623899"
       },
       {
+        "file": ".nx/cache/terminalOutputs/2648306614330375046",
+        "hash": "14731295102444241678"
+      },
+      {
         "file": ".nx/cache/terminalOutputs/5383692994309977977",
         "hash": "1447819098163797064"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/6011748802937617125",
+        "hash": "9100573395425546293"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/6569065879679514341",
+        "hash": "13804694357609524493"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/7197449841793407242",
+        "hash": "15886091396000127935"
       },
       {
         "file": ".nx/cache/terminalOutputs/7383731271016865410",
@@ -228,177 +260,18 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "3777986333888361580"
+        "hash": "806506335226837732"
       },
       {
         "file": "package.json",
-        "hash": "15597168350311939692"
+        "hash": "11643036820691809072"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "14119403847490063380"
-      },
-      {
-        "file": ".nx/cache/terminalOutputs/6011748802937617125",
-        "hash": "9100573395425546293"
       }
     ],
     "projectFileMap": {
-      "nest-authorization": [
-        {
-          "file": "libs/shared/nest/authorization/.eslintrc.json",
-          "hash": "15754961097349354736"
-        },
-        {
-          "file": "libs/shared/nest/authorization/README.md",
-          "hash": "2449473878309828128"
-        },
-        {
-          "file": "libs/shared/nest/authorization/jest.config.ts",
-          "hash": "16326759675278536697"
-        },
-        {
-          "file": "libs/shared/nest/authorization/project.json",
-          "hash": "5621795061244490024"
-        },
-        {
-          "file": "libs/shared/nest/authorization/src/index.ts",
-          "hash": "13071994749059025294"
-        },
-        {
-          "file": "libs/shared/nest/authorization/src/lib/authorization.guard.ts",
-          "hash": "17503646945598159831",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/config",
-            "npm:jwks-rsa",
-            "npm:util",
-            "npm:express-jwt"
-          ]
-        },
-        {
-          "file": "libs/shared/nest/authorization/src/lib/nest-authorization.module.ts",
-          "hash": "13102392572373652529",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "libs/shared/nest/authorization/tsconfig.json",
-          "hash": "9584156853704587869"
-        },
-        {
-          "file": "libs/shared/nest/authorization/tsconfig.lib.json",
-          "hash": "8122501378292448260"
-        },
-        {
-          "file": "libs/shared/nest/authorization/tsconfig.spec.json",
-          "hash": "12676338339107966475"
-        }
-      ],
-      "hv-api-nest": [
-        {
-          "file": "apps/hiverarchy/hv-api-nest/.env",
-          "hash": "7152897244030087184"
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/.eslintrc.json",
-          "hash": "13800677001662881425"
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/jest.config.ts",
-          "hash": "15928315953756397455"
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/project.json",
-          "hash": "14495716946043777490"
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/src/app/app.module.ts",
-          "hash": "13992873729041755710",
-          "deps": [
-            "npm:@nestjs/common",
-            "nest-authorization",
-            "npm:@nestjs/config",
-            "npm:@nestjs/graphql",
-            "npm:@nestjs/apollo",
-            "npm:path"
-          ]
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/src/main.ts",
-          "hash": "11205222914964382693",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/tsconfig.app.json",
-          "hash": "3171572500325445971"
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/tsconfig.json",
-          "hash": "14785519187273610601"
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/tsconfig.spec.json",
-          "hash": "9110660443763673899"
-        },
-        {
-          "file": "apps/hiverarchy/hv-api-nest/webpack.config.js",
-          "hash": "10619490397189790225",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
-        }
-      ],
-      "hv-web-react-e2e": [
-        {
-          "file": "apps/hiverarchy/hv-web-react-e2e/.eslintrc.json",
-          "hash": "7973176717762084071"
-        },
-        {
-          "file": "apps/hiverarchy/hv-web-react-e2e/cypress.config.ts",
-          "hash": "15414076024138857470",
-          "deps": [
-            "npm:cypress",
-            "npm:@nx/cypress"
-          ]
-        },
-        {
-          "file": "apps/hiverarchy/hv-web-react-e2e/project.json",
-          "hash": "1719030372791353107"
-        },
-        {
-          "file": "apps/hiverarchy/hv-web-react-e2e/src/e2e/app.cy.ts",
-          "hash": "3127541969153199477"
-        },
-        {
-          "file": "apps/hiverarchy/hv-web-react-e2e/src/fixtures/example.json",
-          "hash": "11614668686582597233"
-        },
-        {
-          "file": "apps/hiverarchy/hv-web-react-e2e/src/support/app.po.ts",
-          "hash": "11157016311132186162"
-        },
-        {
-          "file": "apps/hiverarchy/hv-web-react-e2e/src/support/commands.ts",
-          "hash": "7314691991044890572"
-        },
-        {
-          "file": "apps/hiverarchy/hv-web-react-e2e/src/support/e2e.ts",
-          "hash": "3666078656922506009"
-        },
-        {
-          "file": "apps/hiverarchy/hv-web-react-e2e/tsconfig.json",
-          "hash": "7790126871106100160"
-        }
-      ],
       "hv-web-react": [
         {
           "file": "apps/hiverarchy/hv-web-react/.babelrc",
@@ -534,6 +407,186 @@
         {
           "file": "apps/hiverarchy/hv-api-nest-e2e/tsconfig.spec.json",
           "hash": "8081058164965064295"
+        }
+      ],
+      "hv-web-react-e2e": [
+        {
+          "file": "apps/hiverarchy/hv-web-react-e2e/.eslintrc.json",
+          "hash": "7973176717762084071"
+        },
+        {
+          "file": "apps/hiverarchy/hv-web-react-e2e/cypress.config.ts",
+          "hash": "15414076024138857470",
+          "deps": [
+            "npm:cypress",
+            "npm:@nx/cypress"
+          ]
+        },
+        {
+          "file": "apps/hiverarchy/hv-web-react-e2e/project.json",
+          "hash": "1719030372791353107"
+        },
+        {
+          "file": "apps/hiverarchy/hv-web-react-e2e/src/e2e/app.cy.ts",
+          "hash": "3127541969153199477"
+        },
+        {
+          "file": "apps/hiverarchy/hv-web-react-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/hiverarchy/hv-web-react-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/hiverarchy/hv-web-react-e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "apps/hiverarchy/hv-web-react-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/hiverarchy/hv-web-react-e2e/tsconfig.json",
+          "hash": "7790126871106100160"
+        }
+      ],
+      "nest-authorization": [
+        {
+          "file": "libs/shared/nest/authorization/.eslintrc.json",
+          "hash": "15754961097349354736"
+        },
+        {
+          "file": "libs/shared/nest/authorization/README.md",
+          "hash": "2449473878309828128"
+        },
+        {
+          "file": "libs/shared/nest/authorization/jest.config.ts",
+          "hash": "16326759675278536697"
+        },
+        {
+          "file": "libs/shared/nest/authorization/project.json",
+          "hash": "5621795061244490024"
+        },
+        {
+          "file": "libs/shared/nest/authorization/src/index.ts",
+          "hash": "13071994749059025294"
+        },
+        {
+          "file": "libs/shared/nest/authorization/src/lib/authorization.guard.ts",
+          "hash": "17503646945598159831",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:jwks-rsa",
+            "npm:util",
+            "npm:express-jwt"
+          ]
+        },
+        {
+          "file": "libs/shared/nest/authorization/src/lib/nest-authorization.module.ts",
+          "hash": "13102392572373652529",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/shared/nest/authorization/tsconfig.json",
+          "hash": "9584156853704587869"
+        },
+        {
+          "file": "libs/shared/nest/authorization/tsconfig.lib.json",
+          "hash": "8122501378292448260"
+        },
+        {
+          "file": "libs/shared/nest/authorization/tsconfig.spec.json",
+          "hash": "12676338339107966475"
+        }
+      ],
+      "hv-api-nest": [
+        {
+          "file": "apps/hiverarchy/hv-api-nest/.env.atlas",
+          "hash": "10428919470956321742"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/.env.development",
+          "hash": "3433194624834312238"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/.env.production",
+          "hash": "1975044537741488469"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/jest.config.ts",
+          "hash": "15928315953756397455"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/project.json",
+          "hash": "14495716946043777490"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/src/app/app.module.ts",
+          "hash": "12573345846539858300",
+          "deps": [
+            "npm:@nestjs/common",
+            "nest-authorization",
+            "npm:@nestjs/config",
+            "npm:@nestjs/graphql",
+            "npm:@nestjs/apollo",
+            "npm:@nestjs/mongoose",
+            "npm:path"
+          ]
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/src/app/thought/thought.model.ts",
+          "hash": "4766458411287959355",
+          "deps": [
+            "npm:@nestjs/graphql",
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/src/app/thought/thought.module.ts",
+          "hash": "7382461741190113655",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/src/main.ts",
+          "hash": "11205222914964382693",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/tsconfig.app.json",
+          "hash": "3171572500325445971"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/tsconfig.json",
+          "hash": "14785519187273610601"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/tsconfig.spec.json",
+          "hash": "9110660443763673899"
+        },
+        {
+          "file": "apps/hiverarchy/hv-api-nest/webpack.config.js",
+          "hash": "10619490397189790225",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
         }
       ]
     }

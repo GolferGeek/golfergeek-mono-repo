@@ -1,0 +1,43 @@
+[1m[33m[36m>[39m[33m [7m[1m[36m NX [39m[33m[22m[1m[27m Unable to load tsconfig-paths, workspace libraries may be inaccessible.[39m[22m
+[1m[33m  - To fix this, install tsconfig-paths with npm/yarn/pnpm[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.78 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (994f00b2a426563d)
+[1m[31mDebugger listening on ws://localhost:9229/089a3d19-04b3-44f0-b63c-b4dc9de1b658[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/089a3d19-04b3-44f0-b63c-b4dc9de1b658[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:04 AM [31m  ERROR[39m[31m [38;5;3m[MongooseModule] [39m[31m[31mUnable to connect to the database. Retrying (1)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:07 AM [31m  ERROR[39m[31m [38;5;3m[MongooseModule] [39m[31m[31mUnable to connect to the database. Retrying (2)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:10 AM [31m  ERROR[39m[31m [38;5;3m[MongooseModule] [39m[31m[31mUnable to connect to the database. Retrying (3)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:13 AM [31m  ERROR[39m[31m [38;5;3m[MongooseModule] [39m[31m[31mUnable to connect to the database. Retrying (4)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:16 AM [31m  ERROR[39m[31m [38;5;3m[MongooseModule] [39m[31m[31mUnable to connect to the database. Retrying (5)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:19 AM [31m  ERROR[39m[31m [38;5;3m[MongooseModule] [39m[31m[31mUnable to connect to the database. Retrying (6)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:22 AM [31m  ERROR[39m[31m [38;5;3m[MongooseModule] [39m[31m[31mUnable to connect to the database. Retrying (7)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:25 AM [31m  ERROR[39m[31m [38;5;3m[MongooseModule] [39m[31m[31mUnable to connect to the database. Retrying (8)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:28 AM [31m  ERROR[39m[31m [38;5;3m[MongooseModule] [39m[31m[31mUnable to connect to the database. Retrying (9)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 88877  - [39m[31m10/31/2023, 7:37:28 AM [31m  ERROR[39m[31m [38;5;3m[ExceptionHandler] [39m[31m[31mThe `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mMongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m[22m
+[1m[31m    at NativeConnection.createClient (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:206:11)[39m[22m
+[1m[31m    at NativeConnection.openUri (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/mongoose/lib/connection.js:755:34)[39m[22m
+[1m[31m    at Mongoose.createConnection (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/mongoose/lib/index.js:348:10)[39m[22m
+[1m[31m    at Function.createMongooseConnection (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/mongoose/dist/mongoose-core.module.js:111:37)[39m[22m
+[1m[31m    at /Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/@nestjs/mongoose/dist/mongoose-core.module.js:62:123[39m[22m
+[1m[31m    at Observable._subscribe (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/rxjs/src/internal/observable/defer.ts:55:15)[39m[22m
+[1m[31m    at Observable._trySubscribe (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/rxjs/src/internal/Observable.ts:244:19)[39m[22m
+[1m[31m    at /Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/rxjs/src/internal/Observable.ts:234:18[39m[22m
+[1m[31m    at Object.errorContext (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/rxjs/src/internal/util/errorContext.ts:29:5)[39m[22m
+[1m[31m    at Observable.subscribe (/Users/golfergeek/projects/golfergeek/mono-repos/golfergeek/node_modules/rxjs/src/internal/Observable.ts:220:5)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
