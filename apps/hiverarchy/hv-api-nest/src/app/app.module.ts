@@ -7,6 +7,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { MongooseModule } from '@nestjs/mongoose';
 import { join } from 'path';
 import { ThoughtModule } from './thought/thought.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { ThoughtModule } from './thought/thought.module';
       }),
     }),
     ThoughtModule,
+    UserModule,
   ],
   controllers: [],
   providers: [],
