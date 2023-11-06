@@ -6,27 +6,18 @@ type Arc {
   _id: String!
   children: [String!]
   collaborators: [String!]
-  comments: [Comment!]
+  comments: [String!]
   elevator: String
   markdown: String!
   owner: String!
   parent: String
   publishedDate: Boolean!
+  refutations: [String!]
   sequence: Float!
+  source: String
   tags: [String!]!
   title: String!
   viewers: [String!]
-}
-
-type Comment {
-  _id: String!
-  arc: String!
-  children: [Comment!]
-  markdown: String!
-  owner: String!
-  parent: Comment
-  publishedDate: Boolean!
-  title: String!
 }
 
 input CreateArcInput {

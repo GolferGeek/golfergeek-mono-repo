@@ -12,7 +12,7 @@ export class Comment {
   _id: string;
 
   @Field((type) => String)
-  arc: {type: String, ref: 'Arc' };
+  arc: { type: String; ref: 'Arc' };
 
   @Field()
   title: string;
@@ -21,16 +21,19 @@ export class Comment {
   markdown: string;
 
   @Field((type) => String)
-  owner: {type: String, ref: 'User' };
+  owner: { type: String; ref: 'User' };
 
   @Field()
   publishedDate: boolean;
 
-  @Field(type => [Comment], { nullable: true })
-  children: [Comment];
+  @Field()
+  isRefutation: boolean;
 
-  @Field(type => Comment, { nullable: true })
-  parent: Comment;
+  @Field((type) => [String], { nullable: true })
+  children: [{type: String; ref: 'Comment'}];
+
+  @Field((type) => String, { nullable: true })
+  parent: {type: String; ref: 'Comment'};
 }
 
 export const BookSchema = SchemaFactory.createForClass(Comment);

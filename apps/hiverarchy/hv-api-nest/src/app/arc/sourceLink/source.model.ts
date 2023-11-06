@@ -3,22 +3,19 @@ import { Field, ObjectType } from '@nestjs/graphql';
 import { Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-import { Comment } from './comment/comment.model';
-import { Refutation } from './refutation/refutation.model';
-
-export type ArcDocument = Arc & Document;
+export type SourceLinkDocument = SourceLink & Document;
 
 @ObjectType()
 @Schema()
-export class Arc {
+export class SourceLink {
   @Field()
   _id: string;
 
   @Field()
   title: string;
 
-  @Field((type) => String, { nullable: true })
-  source: { type: string; ref: 'SourceLink'; default: [null] };
+  @Field((type) => [String], { nullable: true })
+  uri: [{ type: string; ref: 'SourceLink'; default: [null] }];
 
   @Field({ nullable: true })
   elevator: string;
@@ -45,16 +42,10 @@ export class Arc {
   publishedDate: boolean;
 
   @Field((type) => [String], { nullable: true })
-  comments: [{type: String; ref: 'Comment'}];
+  arcs: [{ type: String; ref: 'Arc' }];
 
   @Field((type) => [String], { nullable: true })
-  refutations: [{type: String; ref: 'Refutation'}];
-
-  @Field((type) => [String], { nullable: true })
-  children: [{ type: String; ref: 'Arc' }];
-
-  @Field((type) => String, { nullable: true })
-  parent: { type: String; ref: 'Arc' };
+  refutations: [{ type: String; ref: 'Refutation' }];
 }
 
-export const ArcSchema = SchemaFactory.createForClass(Arc);
+export const SourceLinkSchema = SchemaFactory.createForClass(SourceLink);

@@ -3,14 +3,11 @@ import { Field, ObjectType } from '@nestjs/graphql';
 import { Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-import { Comment } from './comment/comment.model';
-import { Refutation } from './refutation/refutation.model';
-
-export type ArcDocument = Arc & Document;
+export type RefutationDocument = Refutation & Document;
 
 @ObjectType()
 @Schema()
-export class Arc {
+export class Refutation {
   @Field()
   _id: string;
 
@@ -48,13 +45,10 @@ export class Arc {
   comments: [{type: String; ref: 'Comment'}];
 
   @Field((type) => [String], { nullable: true })
-  refutations: [{type: String; ref: 'Refutation'}];
-
-  @Field((type) => [String], { nullable: true })
-  children: [{ type: String; ref: 'Arc' }];
+  children: [{ type: String; ref: 'Refutation' }];
 
   @Field((type) => String, { nullable: true })
-  parent: { type: String; ref: 'Arc' };
+  parent: { type: String; ref: 'Refutation' };
 }
 
-export const ArcSchema = SchemaFactory.createForClass(Arc);
+export const RefutationSchema = SchemaFactory.createForClass(Refutation);
