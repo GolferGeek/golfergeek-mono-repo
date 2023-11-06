@@ -6,7 +6,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { MongooseModule } from '@nestjs/mongoose';
 import { join } from 'path';
-import { ThoughtModule } from './thought/thought.module';
+import { ArcModule } from './arc/arc.module';
 import { UserModule } from './user/user.module';
 
 @Module({
@@ -28,7 +28,7 @@ import { UserModule } from './user/user.module';
         uri: configService.get('MONGODB_URI'),
       }),
     }),
-    ThoughtModule,
+    ArcModule,
     UserModule,
   ],
   controllers: [],

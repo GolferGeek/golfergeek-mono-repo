@@ -1,0 +1,73 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Arc {
+  _id: String!
+  children: [String!]
+  collaborators: [String!]
+  comments: [Comment!]
+  elevator: String
+  markdown: String!
+  owner: String!
+  parent: String
+  publishedDate: Boolean!
+  sequence: Float!
+  tags: [String!]!
+  title: String!
+  viewers: [String!]
+}
+
+type Comment {
+  _id: String!
+  arc: String!
+  children: [Comment!]
+  markdown: String!
+  owner: String!
+  parent: Comment
+  publishedDate: Boolean!
+  title: String!
+}
+
+input CreateArcInput {
+  elevator: String!
+  markdown: String!
+  publishedDate: Boolean!
+  sequence: Float!
+  title: String!
+}
+
+input CreateUserInput {
+  auth0Id: String!
+  bio: String!
+  email: String!
+  imageUrl: String!
+  username: String!
+}
+
+type Mutation {
+  createArc(input: CreateArcInput!): Arc!
+  createUser(input: CreateUserInput!): User!
+  deleteArc(id: ID!): Arc!
+  deleteUser(id: String!): User!
+  updateArc(id: ID!, input: CreateArcInput!): Arc!
+  updateUser(id: String!, input: CreateUserInput!): User!
+}
+
+type Query {
+  arc(id: ID!): Arc!
+  arcs: [Arc!]!
+  user(id: String!): User!
+  users: [User!]!
+}
+
+type User {
+  _id: String!
+  arcs: [String!]
+  auth0Id: String!
+  bio: String
+  email: String!
+  imageUrl: String
+  isAdmin: Boolean!
+  username: String!
+}
