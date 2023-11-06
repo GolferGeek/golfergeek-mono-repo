@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 
-import { NestAuthorizationModule } from '@golfergeek/nest-authorization';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
@@ -8,6 +7,13 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { join } from 'path';
 import { ArcModule } from './arc/arc.module';
 import { UserModule } from './user/user.module';
+import { NestAuthorizationModule } from '@golfergeek/nest-authorization';
+import { NestMongooseModule } from '@golfergeek/nest-mongoose';
+import { SourceLink, SourceLinkSchema } from './arc/sourceLink/source.model';
+import { ArcSchema } from './arc/arc.model';
+import { UserSchema } from './user/user.model';
+import { RefutationSchema } from './arc/refutation/refutation.model';
+import { CommentSchema } from './arc/comment/comment.model';
 
 @Module({
   imports: [
@@ -22,12 +28,14 @@ import { UserModule } from './user/user.module';
       playground: true,
       driver: ApolloDriver,
     }),
-    MongooseModule.forRootAsync({
-      inject: [ConfigService],
-      useFactory: async (configService: ConfigService) => ({
-        uri: configService.get('MONGODB_URI'),
-      }),
-    }),
+    NestMongooseModule,
+    NestMongooseModule.forFeature([
+      { name: 'SourceLink', schema: SourceLinkSchema },
+      { name: 'Arc', schema: ArcSchema },
+      { name: 'User', schema: UserSchema },
+      { name: 'Comment', schema: CommentSchema },
+      { name: 'Refutation', schema: RefutationSchema}
+    ]),
     ArcModule,
     UserModule,
   ],

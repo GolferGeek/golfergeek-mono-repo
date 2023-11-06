@@ -2,6 +2,7 @@
 import { Field, ObjectType } from '@nestjs/graphql';
 import { Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
+import { type } from 'os';
 
 export type UserDocument = User & Document;
 
@@ -31,6 +32,18 @@ export class User {
 
   @Field()
   isAdmin: boolean;
+
+  @Field(type => [String], { nullable: true })
+  favorites: [{ type: String; ref: 'Arc' }];
+
+  @Field(type => [String], { nullable: true })
+  recents: [{ type: String; ref: 'Arc' }];
+
+  @Field(type => [String], { nullable: true })
+  pinned: [{ type: String; ref: 'Arc' }];
+
+  @Field(type => [String], { nullable: true })
+  bookmarks: [{ type: String; ref: 'Arc' }];
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

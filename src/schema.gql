@@ -57,8 +57,12 @@ type User {
   arcs: [String!]
   auth0Id: String!
   bio: String
+  bookmarks: [String!]
   email: String!
+  favorites: [String!]
   imageUrl: String
   isAdmin: Boolean!
+  pinned: [String!]
+  recents: [String!]
   username: String!
 }

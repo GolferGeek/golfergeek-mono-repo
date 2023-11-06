@@ -17,7 +17,8 @@
     "paths": {
       "@golfergeek/nest-authorization": [
         "libs/shared/nest/authorization/src/index.ts"
-      ]
+      ],
+      "@golfergeek/nest-mongoose": ["libs/shared/nest/mongoose/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -36,4 +36,4 @@ export class Comment {
   parent: {type: String; ref: 'Comment'};
 }
 
-export const BookSchema = SchemaFactory.createForClass(Comment);
+export const CommentSchema = SchemaFactory.createForClass(Comment);
