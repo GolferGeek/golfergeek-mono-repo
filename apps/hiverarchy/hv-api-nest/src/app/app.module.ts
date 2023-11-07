@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Logger, Module } from '@nestjs/common';
 
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
@@ -9,6 +9,7 @@ import { ArcModule } from './arc/arc.module';
 import { UserModule } from './user/user.module';
 import { NestAuthorizationModule } from '@golfergeek/nest-authorization';
 import { NestMongooseModule } from '@golfergeek/nest-mongoose';
+import { LoggerModule } from '@golfergeek/nest-logging';
 import { SourceLink, SourceLinkSchema } from './arc/sourceLink/source.model';
 import { ArcSchema } from './arc/arc.model';
 import { UserSchema } from './user/user.model';
@@ -21,6 +22,7 @@ import { CommentSchema } from './arc/comment/comment.model';
     ConfigModule.forRoot({
       isGlobal: true,
     }),
+    LoggerModule,
     GraphQLModule.forRoot({
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
       installSubscriptionHandlers: true,
