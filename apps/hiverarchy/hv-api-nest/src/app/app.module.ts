@@ -3,7 +3,7 @@ import { Logger, Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
-import { MongooseModule } from '@nestjs/mongoose';
+import * as joi from 'joi';
 import { join } from 'path';
 import { ArcModule } from './arc/arc.module';
 import { UserModule } from './user/user.module';
@@ -21,6 +21,13 @@ import { CommentSchema } from './arc/comment/comment.model';
     NestAuthorizationModule,
     ConfigModule.forRoot({
       isGlobal: true,
+      validationSchema: joi.object({
+        AUTH0_AUDIENCE: joi.string().required(),
+        AUTH0_DOMAIN: joi.string().required(),
+        PORT: joi.number().default(3000),
+        DEBUG: joi.boolean().default(false),
+        MONGODB_URI: joi.string().required(),
+      }),
     }),
     LoggerModule,
     GraphQLModule.forRoot({
