@@ -51,7 +51,11 @@ export abstract class AbstractService<TDocument> {
     return this.model.findOneAndDelete(filterQuery, { lean: true });
   }
 
+  async populate(document: TDocument, populate: string) {
+    return this.model.populate(document, populate);
+  }
+
   async createIndex(options: CreateIndexesOptions) {
-    return this.model.createIndexes(options as any);
+    return this.model.createIndexes(options as CreateIndexesOptions);
   }
 }

@@ -10,7 +10,7 @@ import { UserModule } from './user/user.module';
 import { NestAuthorizationModule } from '@golfergeek/nest-authorization';
 import { NestMongooseModule } from '@golfergeek/nest-mongoose';
 import { LoggerModule } from '@golfergeek/nest-logging';
-import { SourceLink, SourceLinkSchema } from './arc/sourceLink/source.model';
+import { SourceLink, SourceLinkSchema } from './arc/sourceLink/sourceLink.model';
 import { ArcSchema } from './arc/arc.model';
 import { UserSchema } from './user/user.model';
 import { RefutationSchema } from './arc/refutation/refutation.model';
