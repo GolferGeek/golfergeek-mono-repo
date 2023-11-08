@@ -16,13 +16,12 @@ export class CreateRefutationInput {
   @Field()
   sequence: number;
 
-  @Field(type => String, { nullable: true })
+  @Field((type) => String, { nullable: true })
   owner: { type: string; ref: 'User' };
 
-  @Field()
-  tags: [string];
+  @Field((type) => [String])
+  tags: [{ type: string }];
 
   @Field()
   publishedDate: boolean;
-
 }
