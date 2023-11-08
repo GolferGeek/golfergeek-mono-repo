@@ -31,7 +31,7 @@ import { CommentSchema } from './arc/comment/comment.model';
     }),
     LoggerModule,
     GraphQLModule.forRoot({
-      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      autoSchemaFile: join(process.cwd(), 'apps/hiverarchy/hv-api-nest/src/schema.gql'),
       installSubscriptionHandlers: true,
       sortSchema: true,
       playground: true,
